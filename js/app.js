@@ -2,6 +2,8 @@ let listaAmigos = [];
 
 function adicionar(){
     let nome = document.getElementById('nome-amigo').value;
+    nome = nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase(); // capitaliza (maiúscula) apenas a primeira letra da variável nome
+
 
     if (nome == '') {
         alert('Escreva um nome no Campo!');
