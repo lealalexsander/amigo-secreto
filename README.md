@@ -14,6 +14,10 @@ O projeto **Amigo Secreto** é uma aplicação web simples para sortear amigos s
 - **CSS**: Estilização da página.
 - **JavaScript**: Lógica para adicionar nomes, sortear pares e atualizar a interface.
 
+## Vercel
+
+https://amigo-secreto-murex.vercel.app/
+
 ## Prints
 
 ![image](https://github.com/user-attachments/assets/d619108c-3679-4266-ad36-ffd0e3f0dd60)
