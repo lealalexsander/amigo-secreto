@@ -208,14 +208,7 @@ body {
 
 @media screen and (max-width: 480px) {
 
-  .background__detail {
-    background-color: #00f4bf;
-    height: auto; /* Permite que o conteúdo cresça */
-    left: 0;
-    position: relative; /* Altera para relativo para evitar sobreposição */
-    top: 0; /* Ajusta a posição para 0 para evitar sobreposição */
-    z-index: 0;
-  }
+
   
   .page__image {
     display: flex;
