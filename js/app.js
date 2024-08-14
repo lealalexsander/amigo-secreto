@@ -23,10 +23,13 @@ function atualizarLista(){
 }
 
 function reiniciar(){
+    apagarListaSorteio();
+    adicionarListaAmigos();
     let amigosLista = document.getElementById('lista-amigos');
     amigosLista.innerHTML = '';
     listaAmigos = [];
-    apagarSorteio();
+    apagarListaSorteio();
+    adicionarListaAmigos();
 }
 
 function limparInput(){
@@ -35,6 +38,7 @@ function limparInput(){
 }
 
 function sortear(){
+    adicionarListaSorteio();
     if (listaAmigos.length <= 2) {
         alert("Adicione pelo menos 3 pessoas para fazer o sorteio.");
     } else {    
@@ -61,9 +65,36 @@ function sortear(){
         }
         
     }
+    apagarListaAmigos()
+
 }
 
 function apagarSorteio(){
     let listaSorteada = document.getElementById('lista-sorteio');
     listaSorteada.innerHTML = '';
 }
+
+function adicionarListaSorteio() {
+    let textoSorteio = document.getElementById('lista-amigos-sorteador');
+    textoSorteio.innerHTML = `<p class="prizeDraw__title">Sorteio</p><div class="prizeDraw__container"><p id="lista-sorteio"></p></div>`;
+    
+}
+
+function apagarListaSorteio(){
+    textoSorteio = document.getElementById('lista-amigos-sorteador');
+    textoSorteio.innerHTML = ``;
+}
+
+function apagarListaAmigos(){
+    let textoAmigos = document.getElementById('amigos-incluidos');
+    textoAmigos.innerHTML = ``;
+}
+
+function adicionarListaAmigos(){
+    textoAmigos = document.getElementById('amigos-incluidos');
+    textoAmigos.innerHTML = `<p class="friends__title">Amigos incluídos</p>
+            <div class="friends__container">
+              <p id="lista-amigos" class="lista-amigos"></p>
+            </div>`;
+}
+

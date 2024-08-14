@@ -207,6 +207,16 @@ body {
 
 
 @media screen and (max-width: 480px) {
+
+  .background__detail {
+    background-color: #00f4bf;
+    height: auto; /* Permite que o conteúdo cresça */
+    left: 0;
+    position: relative; /* Altera para relativo para evitar sobreposição */
+    top: 0; /* Ajusta a posição para 0 para evitar sobreposição */
+    z-index: 0;
+  }
+  
   .page__image {
     display: flex;
     width: 50%;
@@ -230,12 +240,13 @@ body {
   }
 
   .section-principal {
-    margin-top: 50%;
     width: 130%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+    position: fixed;  
+    top: 30px; /* Posiciona o elemento no meio da tela */
   }
 
   .section__title {
@@ -261,7 +272,6 @@ body {
     padding: 20px;
     width: 12em;
     max-width: 100%; /* Limita a largura máxima a 100% do container pai */
-
   }
   
   .friends__container > p {
@@ -270,10 +280,21 @@ body {
     line-height: 160%;
     width: 100%;
     max-width: 100%;
-    }
+    
+  }
+
+  .lista-amigos {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    
+  }
 
   .prizeDraw__container {
     font-size: 14px;
+    overflow-y: auto;
+    height: 100%;
+    max-height: 100%;
   }
 
   .form__input {
@@ -327,8 +348,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -10%;
-    gap: 48px;
-  }
-
+    gap: 48px; 
+    position: fixed;  
+    bottom: 80px;
+    }
+  
 }
