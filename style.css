@@ -207,9 +207,6 @@ body {
 
 
 @media screen and (max-width: 480px) {
-
-
-  
   .page__image {
     display: flex;
     width: 50%;
@@ -223,6 +220,7 @@ body {
     align-items: center;
     width: 80%;
     height: 80%; 
+    opacity: 95%;
   }
   
   .content__main {
