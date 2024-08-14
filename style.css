@@ -204,3 +204,118 @@ body {
   background-color: #fff;
   color: #1875e8;
 }
+
+
+@media screen and (max-width: 480px) {
+  .page__image {
+    display: none;
+  }
+
+  .content__main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-principal, .section--results {
+    width: 158%; 
+  }
+
+  .section__title {
+    font-size: 2em;
+  }
+
+  .form__label {
+    font-size: 18px;
+  }
+
+  .friends__title {
+    font-size: 18px;
+  }
+
+  .section--results {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .friends__container {
+    align-items: center;
+    border: 1px solid #1875e8;
+    border-radius: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 160%;
+    margin-top: 1rem;
+    padding: 20px;
+    width: 58%;
+    max-width: 58%; /* Limita a largura máxima a 100% do container pai */
+
+  }
+  
+  .friends__container > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    width: 300px; /* Define uma largura fixa */
+    max-width: 100%; /* Limita a largura máxima a 100% do container pai */
+    display: flex;
+    flex-direction: column; /* Posiciona os elementos em coluna */
+    gap: 10px; /* Espaçamento entre os itens */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical, se necessário */
+  }
+
+  .prizeDraw__container {
+    font-size: 14px;
+  }
+
+  .form__input {
+    border-radius: 1px;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 32px;
+    outline: none;
+    padding: 1px;
+    width: 100%;
+  }
+
+  .form__input::placeholder {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .form__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de igual largura */
+    grid-gap: 20px; /* Espaço entre os botões */
+  }
+
+  .button.primary {
+    grid-column: 1; /* Primeira coluna */
+  }
+
+  .button.secondary {
+    grid-column: 2; /* Segunda coluna */
+  }
+
+  .form__link {
+    grid-column: span 2; /* Ocupa as duas colunas */
+    text-align: center; /* Centraliza o texto */
+    font-size: 20px;
+  }
+
+  .button {
+    border-radius: 10px;
+    font-size: 18px;
+    height: 40px;
+    padding: 16px 24px;
+    text-align: center;
+    width: 105px;
+  }
+
+  .section--results {
+    margin-top: -25%;
+  }
+
+}
