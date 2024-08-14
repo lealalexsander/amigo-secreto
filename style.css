@@ -297,11 +297,12 @@ body {
     padding: 1px;
     width: 100%;
     max-width: 100%;
+    padding-left: 10px;
   }
 
   .form__input::placeholder {
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 1px;
   }
 
   .form__buttons {
