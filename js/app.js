@@ -30,6 +30,7 @@ function reiniciar(){
     listaAmigos = [];
     apagarListaSorteio();
     adicionarListaAmigos();
+    limparInput();
 }
 
 function limparInput(){
@@ -65,7 +66,8 @@ function sortear(){
         }
         
     }
-    apagarListaAmigos()
+    apagarListaAmigos();
+    limparInput();
 
 }
 
@@ -76,7 +78,7 @@ function apagarSorteio(){
 
 function adicionarListaSorteio() {
     let textoSorteio = document.getElementById('lista-amigos-sorteador');
-    textoSorteio.innerHTML = `<p class="prizeDraw__title">Sorteio</p><div class="prizeDraw__container"><p id="lista-sorteio"></p></div>`;
+    textoSorteio.innerHTML = `<p class="prizeDraw__title">Sorteio</p><div class="prizeDraw__container"><p id="lista-sorteio" class="lista-amigos"></p></div>`;
     
 }
 
@@ -92,9 +94,9 @@ function apagarListaAmigos(){
 
 function adicionarListaAmigos(){
     textoAmigos = document.getElementById('amigos-incluidos');
-    textoAmigos.innerHTML = `<p class="friends__title">Amigos incluídos</p>
+    textoAmigos.innerHTML = `<p class="friends__title">Amigos incluídos:</p>
             <div class="friends__container">
-              <p id="lista-amigos" class="lista-amigos"></p>
+              <p id="lista-amigos" class="lista-amigo"></p>
             </div>`;
 }
 
